@@ -2,7 +2,7 @@ package blog
 
 import (
 	"github.com/labstack/echo"
-	"github.com/mingz2013/echo-demo-go/internal/app/blog/controllers"
+	"echo-demo-go/internal/app/blog/controllers"
 	"gopkg.in/go-playground/validator.v8"
 	"net/http"
 )

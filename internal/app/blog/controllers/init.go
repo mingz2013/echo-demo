@@ -2,12 +2,13 @@ package controllers
 
 import (
 	"github.com/labstack/echo"
+	"echo-demo-go/internal/app/login/controllers"
 )
 
 func RegisterRouters(e *echo.Echo) {
 
-	user := &UserController{}
-	user.registerRouter(e.Group("/user"))
+	user := &controllers.UserController{}
+	user.RegisterRouter(e.Group("/user"))
 
 	post := &PostController{}
 	post.registerRouter(e.Group("/post"))

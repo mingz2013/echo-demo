@@ -2,14 +2,14 @@ package controllers
 
 import (
 	"github.com/labstack/echo"
-	"github.com/mingz2013/echo-demo-go/internal/app/login/models"
+	"echo-demo-go/internal/app/login/models"
 	"net/http"
 )
 
 type UserController struct {
 }
 
-func (c *UserController) registerRouter(g *echo.Group) {
+func (c *UserController) RegisterRouter(g *echo.Group) {
 	g.GET("/", c.list)
 	g.POST("/", c.save)
 	g.GET("/:id", c.get)

@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"github.com/labstack/echo"
-	"github.com/mingz2013/echo-demo-go/internal/app/blog/models"
+	"echo-demo-go/internal/app/blog/models"
 	"net/http"
 )
 
